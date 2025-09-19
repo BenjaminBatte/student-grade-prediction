@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-# Ensure results/figures exists
+
 FIGURES_DIR = os.path.join(os.path.dirname(__file__), "..", "results", "figures")
 os.makedirs(FIGURES_DIR, exist_ok=True)
 

@@ -1,12 +1,12 @@
 ---
+title: Architecture
+---
 
-## title: Architecture
-
-# 📐 Project Architecture
+## 📐 Project Architecture
 
 This section explains the folder structure and pipeline flow.
 
-## 🗂 Project Structure
+### 🗂 Project Structure
 
 ```
 student-grade-prediction/
