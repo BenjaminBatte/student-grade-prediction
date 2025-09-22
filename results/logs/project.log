@@ -13,108 +13,280 @@ NEW RUN STARTED: 2025-09-19 11:21:37.912681 | Run ID: 20250919_112137
 2025-09-19 11:21:38,452 [INFO] Model saved at C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_math.pkl
 2025-09-19 11:21:38,452 [INFO] Pipeline completed for math with random_forest.
 
+
+
 ================================================================================
-NEW RUN STARTED: 2025-09-19 11:22:05.367316 | Run ID: 20250919_112205
+NEW RUN STARTED: 2025-09-22 10:57:13.652911 | Run ID: 20250922_105713
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 11:22:07.086803 | Run ID: 20250919_112207
-================================================================================
-2025-09-19 11:22:07,109 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 11:22:07,109 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 11:22:07,131 [INFO] Training random_forest on portuguese dataset...
-2025-09-19 11:22:07,617 [INFO] Metrics saved at C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\portuguese_metrics.json
-2025-09-19 11:22:07,667 [INFO] Model saved at C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_portuguese.pkl
-2025-09-19 11:22:07,667 [INFO] Pipeline completed for portuguese with random_forest.
-
-================================================================================
-NEW RUN STARTED: 2025-09-19 11:40:48.713304 | Run ID: 20250919_114048
+NEW RUN STARTED: 2025-09-22 10:57:15.278920 | Run ID: 20250922_105715
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 11:40:51.038144 | Run ID: 20250919_114051
-================================================================================
-2025-09-19 11:40:51,063 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 11:40:51,064 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 11:40:51,066 [INFO] Training random_forest on portuguese dataset...
-2025-09-19 11:40:51,796 [INFO] Pipeline completed for portuguese with random_forest.
-
-================================================================================
-NEW RUN STARTED: 2025-09-19 11:42:16.339162 | Run ID: 20250919_114216
+NEW RUN STARTED: 2025-09-22 11:00:16.745974 | Run ID: 20250922_110016
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 11:42:18.017547 | Run ID: 20250919_114218
-================================================================================
-2025-09-19 11:42:18,040 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 11:42:18,040 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 11:42:18,040 [INFO] Training random_forest on portuguese dataset...
-2025-09-19 11:42:18,632 [INFO] Pipeline completed for portuguese with random_forest.
-
-================================================================================
-NEW RUN STARTED: 2025-09-19 12:59:05.423208 | Run ID: 20250919_125905
+NEW RUN STARTED: 2025-09-22 11:00:18.476491 | Run ID: 20250922_110018
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 12:59:07.199234 | Run ID: 20250919_125907
+NEW RUN STARTED: 2025-09-22 11:00:18.682871 | Run ID: 20250922_110018
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:01:38.777885 | Run ID: 20250919_130138
+NEW RUN STARTED: 2025-09-22 11:01:19.509330 | Run ID: 20250922_110119
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:01:40.768945 | Run ID: 20250919_130140
+NEW RUN STARTED: 2025-09-22 11:01:21.131171 | Run ID: 20250922_110121
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:28:34.501393 | Run ID: 20250919_132834
+NEW RUN STARTED: 2025-09-22 11:01:21.229259 | Run ID: 20250922_110121
+================================================================================
+2025-09-22 11:01:21,260 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:01:21,260 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:01:21,260 [INFO] Training random_forest on math dataset...
+2025-09-22 11:01:21,756 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-22 11:01:21,780 [ERROR] ❌ Model evaluation failed: got an unexpected keyword argument 'squared'
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:04:15.749594 | Run ID: 20250922_110415
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:28:36.139049 | Run ID: 20250919_132836
+NEW RUN STARTED: 2025-09-22 11:04:17.196408 | Run ID: 20250922_110417
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:31:10.348875 | Run ID: 20250919_133110
+NEW RUN STARTED: 2025-09-22 11:04:17.277366 | Run ID: 20250922_110417
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 13:31:12.246956 | Run ID: 20250919_133112
-================================================================================
-2025-09-19 13:31:12,271 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 13:31:12,273 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 13:31:12,278 [INFO] Training random_forest on portuguese dataset...
-2025-09-19 13:31:12,998 [INFO] Pipeline completed for portuguese with random_forest.
-
-================================================================================
-NEW RUN STARTED: 2025-09-19 14:42:54.400846 | Run ID: 20250919_144254
+NEW RUN STARTED: 2025-09-22 11:04:47.389950 | Run ID: 20250922_110447
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 14:42:56.368973 | Run ID: 20250919_144256
+NEW RUN STARTED: 2025-09-22 11:04:49.189432 | Run ID: 20250922_110449
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 15:09:26.211547 | Run ID: 20250919_150926
+NEW RUN STARTED: 2025-09-22 11:04:49.280905 | Run ID: 20250922_110449
+================================================================================
+2025-09-22 11:04:49,312 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:04:49,314 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:04:49,314 [INFO] Training random_forest on math dataset...
+2025-09-22 11:04:49,670 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-22 11:04:49,700 [ERROR] ❌ Model evaluation failed: got an unexpected keyword argument 'squared'
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:05:41.206769 | Run ID: 20250922_110541
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 15:09:27.749055 | Run ID: 20250919_150927
-================================================================================
-2025-09-19 15:09:27,776 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 15:09:27,777 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 15:09:27,778 [INFO] Training random_forest on math dataset...
-2025-09-19 15:09:28,302 [INFO] Pipeline completed for math with random_forest.
-
-================================================================================
-NEW RUN STARTED: 2025-09-19 15:09:29.875827 | Run ID: 20250919_150929
+NEW RUN STARTED: 2025-09-22 11:05:42.995205 | Run ID: 20250922_110542
 ================================================================================
 
 ================================================================================
-NEW RUN STARTED: 2025-09-19 15:09:31.456571 | Run ID: 20250919_150931
+NEW RUN STARTED: 2025-09-22 11:05:43.105290 | Run ID: 20250922_110543
 ================================================================================
-2025-09-19 15:09:31,475 [INFO] Math dataset loaded successfully with shape (395, 33)
-2025-09-19 15:09:31,480 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
-2025-09-19 15:09:31,481 [INFO] Training random_forest on portuguese dataset...
-2025-09-19 15:09:32,065 [INFO] Pipeline completed for portuguese with random_forest.
+2025-09-22 11:05:43,133 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:05:43,133 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:05:43,133 [INFO] Training random_forest on portuguese dataset...
+2025-09-22 11:05:43,639 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:05:43,661 [ERROR] ❌ Model evaluation failed: got an unexpected keyword argument 'squared'
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:07:24.445702 | Run ID: 20250922_110724
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:07:26.928877 | Run ID: 20250922_110726
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:07:27.043608 | Run ID: 20250922_110727
+================================================================================
+2025-09-22 11:07:27,076 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:07:27,077 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:07:27,081 [INFO] Training random_forest on portuguese dataset...
+2025-09-22 11:07:27,740 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:07:27,764 [ERROR] ❌ Model evaluation failed: got an unexpected keyword argument 'squared'
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:08:53.289167 | Run ID: 20250922_110853
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:08:54.799992 | Run ID: 20250922_110854
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:08:54.933529 | Run ID: 20250922_110854
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:04.207085 | Run ID: 20250922_111304
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:06.112183 | Run ID: 20250922_111306
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:06.247878 | Run ID: 20250922_111306
+================================================================================
+2025-09-22 11:13:06,274 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:13:06,274 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:13:06,277 [INFO] Training random_forest on math dataset...
+2025-09-22 11:13:06,646 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-22 11:13:06,686 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_math_random_forest.csv
+2025-09-22 11:13:06,687 [INFO]    MAE: 1.179, RMSE: 1.958, R²: 0.813
+2025-09-22 11:13:06,747 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_math.pkl
+2025-09-22 11:13:06,792 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:13:06,792 [INFO] ✅ Pipeline completed for math with random_forest in 0.54 seconds. Metrics: {'mae': 1.179, 'mse': 3.835, 'rmse': np.float64(1.958), 'r2': 0.813, 'dataset': 'math_random_forest', 'timestamp': '2025-09-22 11:13:06'}
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:35.305268 | Run ID: 20250922_111335
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:37.037253 | Run ID: 20250922_111337
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:13:37.134058 | Run ID: 20250922_111337
+================================================================================
+2025-09-22 11:13:37,155 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:13:37,156 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:13:37,161 [INFO] Training random_forest on portuguese dataset...
+2025-09-22 11:13:37,691 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:13:37,727 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_random_forest.csv
+2025-09-22 11:13:37,728 [INFO]    MAE: 0.747, RMSE: 1.243, R²: 0.842
+2025-09-22 11:13:37,789 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_portuguese.pkl
+2025-09-22 11:13:37,823 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:13:37,823 [INFO] ✅ Pipeline completed for portuguese with random_forest in 0.69 seconds. Metrics: {'mae': 0.747, 'mse': 1.546, 'rmse': np.float64(1.243), 'r2': 0.842, 'dataset': 'portuguese_random_forest', 'timestamp': '2025-09-22 11:13:37'}
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:08.228005 | Run ID: 20250922_111408
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:09.971006 | Run ID: 20250922_111409
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:10.074680 | Run ID: 20250922_111410
+================================================================================
+2025-09-22 11:14:10,091 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:14:10,100 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:14:10,103 [INFO] Training linear_regression on portuguese dataset...
+2025-09-22 11:14:10,201 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:14:10,241 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_linear_regression.csv
+2025-09-22 11:14:10,243 [INFO]    MAE: 0.765, RMSE: 1.215, R²: 0.849
+2025-09-22 11:14:10,255 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\linear_regression_portuguese.pkl
+2025-09-22 11:14:10,268 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:14:10,268 [INFO] ✅ Pipeline completed for portuguese with linear_regression in 0.19 seconds. Metrics: {'mae': 0.765, 'mse': 1.476, 'rmse': np.float64(1.215), 'r2': 0.849, 'dataset': 'portuguese_linear_regression', 'timestamp': '2025-09-22 11:14:10'}
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:48.995686 | Run ID: 20250922_111448
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:50.908668 | Run ID: 20250922_111450
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:14:50.992566 | Run ID: 20250922_111450
+================================================================================
+2025-09-22 11:14:51,030 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:14:51,030 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:14:51,034 [INFO] Training random_forest on portuguese dataset...
+2025-09-22 11:14:51,661 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:14:51,694 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_random_forest.csv
+2025-09-22 11:14:51,695 [INFO]    MAE: 0.747, RMSE: 1.243, R²: 0.842
+2025-09-22 11:14:51,761 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_portuguese.pkl
+2025-09-22 11:14:51,809 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:14:51,809 [INFO] ✅ Pipeline completed for portuguese with random_forest in 0.8 seconds. Metrics: {'mae': 0.747, 'mse': 1.546, 'rmse': np.float64(1.243), 'r2': 0.842, 'dataset': 'portuguese_random_forest', 'timestamp': '2025-09-22 11:14:51'}
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:26:18.899182 | Run ID: 20250922_112618
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:26:20.518396 | Run ID: 20250922_112620
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:26:21.824046 | Run ID: 20250922_112621
+================================================================================
+2025-09-22 11:26:21,824 [INFO] 🚀 Starting automated ML pipeline...
+2025-09-22 11:26:21,846 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:26:21,846 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:26:21,853 [INFO] 📊 Generating EDA plots for Math dataset...
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:30:37.916562 | Run ID: 20250922_113037
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:30:39.429132 | Run ID: 20250922_113039
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-22 11:30:39.704904 | Run ID: 20250922_113039
+================================================================================
+2025-09-22 11:30:39,704 [INFO] 🚀 Starting automated ML pipeline...
+2025-09-22 11:30:39,718 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:30:39,718 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:30:39,718 [INFO] 📊 Generating EDA plots for Math dataset...
+2025-09-22 11:30:46,554 [INFO] ✅ Math EDA completed
+2025-09-22 11:30:46,554 [INFO] 📊 Generating EDA plots for Portuguese dataset...
+2025-09-22 11:30:54,881 [INFO] ✅ Portuguese EDA completed
+2025-09-22 11:30:54,901 [INFO] 🤖 Training all model-dataset combinations...
+2025-09-22 11:30:54,921 [INFO] 🔧 Training 1/4: random_forest on math
+2025-09-22 11:30:54,993 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:30:55,006 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:30:55,016 [INFO] Training random_forest on math dataset...
+2025-09-22 11:30:55,601 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-22 11:30:55,638 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_math_random_forest.csv
+2025-09-22 11:30:55,639 [INFO]    MAE: 1.179, RMSE: 1.958, R²: 0.813
+2025-09-22 11:30:55,729 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_math.pkl
+2025-09-22 11:30:55,788 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:30:55,788 [INFO] ✅ Pipeline completed for math with random_forest in 0.85 seconds. Metrics: {'mae': 1.179, 'mse': 3.835, 'rmse': np.float64(1.958), 'r2': 0.813, 'dataset': 'math_random_forest', 'timestamp': '2025-09-22 11:30:55'}
+2025-09-22 11:30:55,788 [INFO] 🔧 Training 2/4: linear_regression on math
+2025-09-22 11:30:55,788 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:30:55,788 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:30:55,803 [INFO] Training linear_regression on math dataset...
+2025-09-22 11:30:55,831 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-22 11:30:55,855 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_math_linear_regression.csv
+2025-09-22 11:30:55,855 [INFO]    MAE: 1.647, RMSE: 2.378, R²: 0.724
+2025-09-22 11:30:55,866 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\linear_regression_math.pkl
+2025-09-22 11:30:55,872 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:30:55,872 [INFO] ✅ Pipeline completed for math with linear_regression in 0.08 seconds. Metrics: {'mae': 1.647, 'mse': 5.657, 'rmse': np.float64(2.378), 'r2': 0.724, 'dataset': 'math_linear_regression', 'timestamp': '2025-09-22 11:30:55'}
+2025-09-22 11:30:55,872 [INFO] 🔧 Training 3/4: random_forest on portuguese
+2025-09-22 11:30:55,891 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:30:55,891 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:30:55,893 [INFO] Training random_forest on portuguese dataset...
+2025-09-22 11:30:56,629 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:30:56,652 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_random_forest.csv
+2025-09-22 11:30:56,663 [INFO]    MAE: 0.747, RMSE: 1.243, R²: 0.842
+2025-09-22 11:30:56,753 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_portuguese.pkl
+2025-09-22 11:30:56,831 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:30:56,832 [INFO] ✅ Pipeline completed for portuguese with random_forest in 0.96 seconds. Metrics: {'mae': 0.747, 'mse': 1.546, 'rmse': np.float64(1.243), 'r2': 0.842, 'dataset': 'portuguese_random_forest', 'timestamp': '2025-09-22 11:30:56'}
+2025-09-22 11:30:56,834 [INFO] 🔧 Training 4/4: linear_regression on portuguese
+2025-09-22 11:30:56,848 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-22 11:30:56,848 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-22 11:30:56,851 [INFO] Training linear_regression on portuguese dataset...
+2025-09-22 11:30:56,912 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-22 11:30:56,942 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_linear_regression.csv
+2025-09-22 11:30:56,945 [INFO]    MAE: 0.765, RMSE: 1.215, R²: 0.849
+2025-09-22 11:30:56,955 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\linear_regression_portuguese.pkl
+2025-09-22 11:30:56,963 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-22 11:30:56,963 [INFO] ✅ Pipeline completed for portuguese with linear_regression in 0.13 seconds. Metrics: {'mae': 0.765, 'mse': 1.476, 'rmse': np.float64(1.215), 'r2': 0.849, 'dataset': 'portuguese_linear_regression', 'timestamp': '2025-09-22 11:30:56'}
+2025-09-22 11:30:56,963 [INFO] 🎉 All done! Check results/ folder for outputs.
+2025-09-22 11:30:56,963 [INFO] 📁 Models saved in: results/models/
+2025-09-22 11:30:56,963 [INFO] 📊 Metrics saved in: results/metrics/
+2025-09-22 11:30:56,963 [INFO] 📈 Plots saved in: results/figures/
