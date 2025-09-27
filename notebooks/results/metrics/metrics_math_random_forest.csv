@@ -1,0 +1,5 @@
+mae,mse,rmse,r2,dataset,timestamp
+1.179,3.835,1.958,0.813,math_random_forest,2025-09-27 12:35:47
+1.179,3.835,1.958,0.813,math_random_forest,2025-09-27 12:36:00
+1.179,3.835,1.958,0.813,math_random_forest,2025-09-27 12:40:19
+1.179,3.835,1.958,0.813,math_random_forest,2025-09-27 12:50:22

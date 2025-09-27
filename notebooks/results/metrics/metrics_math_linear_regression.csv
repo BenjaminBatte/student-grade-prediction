@@ -1,0 +1,5 @@
+mae,mse,rmse,r2,dataset,timestamp
+1.647,5.657,2.378,0.724,math_linear_regression,2025-09-27 12:35:47
+1.647,5.657,2.378,0.724,math_linear_regression,2025-09-27 12:35:59
+1.647,5.657,2.378,0.724,math_linear_regression,2025-09-27 12:40:19
+1.647,5.657,2.378,0.724,math_linear_regression,2025-09-27 12:50:21

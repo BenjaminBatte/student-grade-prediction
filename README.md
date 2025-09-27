@@ -1,7 +1,3 @@
-# Student Grade Prediction
-
-https://benjaminbatte.github.io/student-grade-prediction/
-
 # 🎓 Student Grade Prediction
 
 A machine learning pipeline for predicting students’ final grades (G3) using the UCI Student Performance dataset (Cortez & Silva, 2008).
