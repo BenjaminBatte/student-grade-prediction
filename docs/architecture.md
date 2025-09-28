@@ -8,37 +8,37 @@ This section explains the folder structure and pipeline flow.
 
 ## 🗂 Project Structure
 
+```
 student-grade-prediction/
-│── data/ # Raw datasets
-│ ├── student-mat.csv
-│ ├── student-por.csv
-│ └── ...
 │
-│── notebooks/ # Experiments/EDA
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_feature_engineering.ipynb
-│ └── 03_modeling.ipynb
+├── data/                     # Raw datasets
+│   ├── student-mat.csv
+│   ├── student-por.csv
+│   └── ...
 │
-│── results/ # Outputs: logs, metrics, models, figures
-│ ├── figures/ # EDA plots
-│ ├── logs/ # Logs from runs
-│ ├── metrics/ # Evaluation reports (.csv)
-│ └── models/ # Saved pipelines (.pkl)
+├── notebooks/                # Experiments/EDA
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_modeling.ipynb
 │
-│── src/ # Source code (modular + reusable)
-│ │── **init**.py
-│ │
-│ ├── data_loader.py # Load raw datasets
-│ ├── preprocessing.py # Build preprocessing transformers
-│ ├── eda.py # EDA utilities
-│ ├── model.py # Train, evaluate, save pipeline
-│ ├── utils.py # Logging, helpers
-│ ├── main.py # CLI: train + evaluate + save
-│ └── predict.py # CLI: load model + predict on new data
+├── results/                  # Outputs: logs, metrics, models, figures
+│   ├── figures/              # EDA plots
+│   ├── logs/                 # Logs from runs
+│   ├── metrics/              # Evaluation reports (.csv)
+│   └── models/               # Saved pipelines (.pkl)
 │
-│── requirements.txt # Dependencies
-│── README.md # Documentation
-
+├── src/                      # Source code (modular + reusable)
+│   ├── __init__.py
+│   ├── data_loader.py        # Load raw datasets
+│   ├── preprocessing.py      # Build preprocessing transformers
+│   ├── eda.py                # EDA utilities
+│   ├── model.py              # Train, evaluate, save pipeline
+│   ├── utils.py              # Logging, helpers
+│   ├── main.py               # CLI: train + evaluate + save
+│   └── predict.py            # CLI: load model + predict on new data
+│
+├── requirements.txt          # Dependencies
+└── README.md                 # Documentation
 ```
 
 ## 🔄 Workflow
@@ -55,16 +55,4 @@ student-grade-prediction/
 
 ---
 
-## 🔗 Navigation
-
-* [Home](index.md)
-* [About](about.md)
-* [Usage](usage.md)
-* [Results](results.md)
-* [Figures](figures.md)
-* [Discussion](discussion.md)
-
----
-
 [⬅️ Back: Home](index.md) | [➡️ Next: Usage](usage.md)
-```
