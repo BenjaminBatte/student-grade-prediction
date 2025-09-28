@@ -1,31 +1,25 @@
 import pandas as pd
 import matplotlib
-# Set non-interactive backend to avoid Qt issues
-matplotlib.use('Agg')  # This must come before pyplot import
 import matplotlib.pyplot as plt
 import seaborn as sns
 import os
+import argparse
+
+# --- Configuration ---
+# Default: headless mode (Agg backend)
+matplotlib.use('Agg')
 
 # Directory where generated figures will be saved
 FIGURES_DIR = os.path.join(os.path.dirname(__file__), "..", "results", "figures")
 os.makedirs(FIGURES_DIR, exist_ok=True)
 
+# Toggle interactive display
+SHOW_PLOTS = False
+
 
 def plot_distributions(df: pd.DataFrame, columns=None, dataset_name="dataset"):
     """
     Plot and save histograms for numeric columns in the dataset.
-
-    Args:
-        df (pd.DataFrame): Input dataset.
-        columns (list, optional): List of columns to plot. If None, all numeric
-            columns will be used.
-        dataset_name (str, optional): Prefix for saved plot filenames.
-
-    Saves:
-        PNG files for each numeric column distribution in results/figures/.
-
-    Example:
-        >>> plot_distributions(df, ["age", "G3"], dataset_name="math")
     """
     if columns is None:
         # Select numeric columns if not explicitly provided
@@ -41,23 +35,15 @@ def plot_distributions(df: pd.DataFrame, columns=None, dataset_name="dataset"):
 
         out_path = os.path.join(FIGURES_DIR, f"{dataset_name}_{col}_distribution.png")
         plt.savefig(out_path)
+        if SHOW_PLOTS:
+            plt.show()
         plt.close()
-        print(f"Saved distribution plot: {out_path}")  # Add feedback
+        print(f"Saved distribution plot: {out_path}")
 
 
 def plot_correlation_heatmap(df: pd.DataFrame, dataset_name="dataset"):
     """
     Generate and save a correlation heatmap for numeric features.
-
-    Args:
-        df (pd.DataFrame): Input dataset.
-        dataset_name (str, optional): Prefix for saved plot filename.
-
-    Saves:
-        A PNG file containing the correlation heatmap.
-    
-    Example:
-        >>> plot_correlation_heatmap(df, dataset_name="portuguese")
     """
     plt.figure(figsize=(12, 8))
     corr = df.corr(numeric_only=True)
@@ -67,25 +53,15 @@ def plot_correlation_heatmap(df: pd.DataFrame, dataset_name="dataset"):
 
     out_path = os.path.join(FIGURES_DIR, f"{dataset_name}_correlation_heatmap.png")
     plt.savefig(out_path)
+    if SHOW_PLOTS:
+        plt.show()
     plt.close()
-    print(f"Saved correlation heatmap: {out_path}")  # Add feedback
+    print(f"Saved correlation heatmap: {out_path}")
 
 
 def summarize_dataset(df: pd.DataFrame):
     """
     Print a dataset summary including shape, data types, missing values, and head.
-
-    Args:
-        df (pd.DataFrame): Input dataset.
-
-    Prints:
-        - Dataset shape (rows, columns)
-        - Column data types
-        - Missing values per column
-        - First 5 rows of data
-    
-    Example:
-        >>> summarize_dataset(df)
     """
     print("=== Dataset Summary ===")
     print(f"Shape: {df.shape}")
@@ -96,22 +72,31 @@ def summarize_dataset(df: pd.DataFrame):
 
 # Function to test EDA independently
 if __name__ == "__main__":
-    # Test the EDA functions
+    parser = argparse.ArgumentParser(description="EDA utility")
+    parser.add_argument("--show", action="store_true", help="Show plots interactively as well as saving them")
+    args = parser.parse_args()
+
+    # Enable showing plots if requested
+    if args.show:
+        SHOW_PLOTS = True
+        matplotlib.use("TkAgg")  # or another interactive backend
+        import matplotlib.pyplot as plt  # reload pyplot with new backend
+
     from data_loader import load_data
-    
+
     print("Testing EDA functions...")
     mat, por = load_data()
-    
+
     if mat is not None:
         print("\n=== Math Dataset ===")
         summarize_dataset(mat)
         plot_distributions(mat, dataset_name="math")
         plot_correlation_heatmap(mat, dataset_name="math")
-    
+
     if por is not None:
         print("\n=== Portuguese Dataset ===")
         summarize_dataset(por)
         plot_distributions(por, dataset_name="portuguese")
         plot_correlation_heatmap(por, dataset_name="portuguese")
-    
+
     print("EDA testing completed!")
