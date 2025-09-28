@@ -4,7 +4,11 @@ title: Home
 
 # 🏠 Student Grade Prediction – Home
 
-Welcome to the **Student Grade Prediction** project documentation. This site provides an overview of the system architecture, usage instructions, sample results, and background information.
+Welcome to the **Student Grade Prediction** project documentation.
+
+📖 For a complete project overview, see the [README.md](../README.md).
+
+---
 
 Use the navigation below to explore:
 

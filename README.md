@@ -1,9 +1,18 @@
-# 🎓 Student Grade Prediction
+---
+🎓 Student Grade Prediction
+---
 
 A machine learning pipeline for predicting students’ final grades (G3) using the UCI Student Performance dataset (Cortez & Silva, 2008).
 The project includes **data preprocessing, exploratory data analysis, regression models, evaluation metrics, and reproducible results**.
 
-🔗 **APA 7 Course Project Report:** [Student_Grade_Prediction_Report.pdf](./Student_Grade_Prediction_Report.pdf)
+## 📑 Project Report & Presentation
+
+All course project deliverables are stored in [`docs/project_report/`](./docs/project_report/):
+
+- [Student_Grade_Prediction_Report.doc](./docs/project_report/Student_Grade_Prediction_Report.doc)
+- [Student_Grade_Prediction_Report.pdf](./docs/project_report/Student_Grade_Prediction_Report.pdf)
+- [Student_Grade_Prediction_Presentation.pptx](./docs/project_report/Student_Grade_Prediction_Presentation.pptx)
+
 🔗 **Live Documentation:** [https://benjaminbatte.github.io/student-grade-prediction/](https://benjaminbatte.github.io/student-grade-prediction/)
 
 ---
@@ -15,6 +24,7 @@ student-grade-prediction/
 │── data/                     # Raw datasets (student-mat.csv, student-por.csv)
 │── results/                  # Outputs: figures, metrics, models, logs
 │── src/                      # Source code
+│   ├── __init__.py           # Package initializer
 │   ├── data_loader.py        # Load datasets
 │   ├── eda.py                # Exploratory data analysis (plots, summaries)
 │   ├── preprocessing.py      # ColumnTransformer (scaling + encoding)
@@ -27,7 +37,16 @@ student-grade-prediction/
 │   ├── 01_data_exploration.ipynb
 │   ├── 02_feature_engineering.ipynb
 │   └── 03_modeling.ipynb
-│── README.md                 # Documentation
+│── docs/                     # Documentation site (GitHub Pages)
+│   ├── index.md              # Home page
+│   ├── about.md              # About the project
+│   ├── architecture.md       # Project architecture
+│   ├── usage.md              # Usage instructions
+│   ├── results.md            # Results summary
+│   ├── figures.md            # Figures and EDA plots
+│   ├── discussion.md         # Discussion and implications
+│   └── conclusion.md         # Conclusion and future directions
+│── README.md                 # Project overview
 │── requirements.txt          # Python dependencies
 ```
 
@@ -63,7 +82,7 @@ python -m src.main
 ### Run Predictions on New Data
 
 ```bash
-python -m src.predict --model results/models/latest_model.pkl --data data/new_data.csv
+python -m src.predict --model results/models/random_forest_math.pkl --data data/new_data_math.csv
 ```
 
 - Predictions saved to → `results/predictions/predictions.csv`
@@ -78,14 +97,14 @@ python -m src.generate_sample_data
 
 ## 📊 Models & Metrics
 
-- **Linear Regression** → Baseline model (low predictive power on categorical-heavy datasets).
+- **Linear Regression** → Baseline model (weaker on categorical-heavy datasets).
 - **Random Forest Regression** → Stronger performance, captures non-linearities.
 
 Metrics saved include:
 
-- R² (Coefficient of Determination)
-- RMSE (Root Mean Squared Error)
-- MAE (Mean Absolute Error)
+- **R²** (Coefficient of Determination)
+- **RMSE** (Root Mean Squared Error)
+- **MAE** (Mean Absolute Error)
 
 ---
 
@@ -96,6 +115,19 @@ Metrics saved include:
 - **03_modeling.ipynb** → Model training, evaluation, hyperparameter tuning
 
 These notebooks complement the `src/` pipeline and allow for interactive experimentation.
+
+---
+
+## 📖 Documentation
+
+- **Home:** [docs/index.md](./docs/index.md)
+- **About:** [docs/about.md](./docs/about.md)
+- **Architecture:** [docs/architecture.md](./docs/architecture.md)
+- **Usage:** [docs/usage.md](./docs/usage.md)
+- **Results:** [docs/results.md](./docs/results.md)
+- **Figures:** [docs/figures.md](./docs/figures.md)
+- **Discussion:** [docs/discussion.md](./docs/discussion.md)
+- **Conclusion:** [docs/conclusion.md](./docs/conclusion.md)
 
 ---
 
