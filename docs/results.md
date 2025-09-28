@@ -40,22 +40,4 @@ Two models were applied to both datasets: **Linear Regression (LR)** and **Rando
 
 ---
 
-## 📝 Discussion
-
-- **Hypothesis Confirmed:** G1 and G2 consistently emerged as the strongest predictors of G3.
-- **Model Comparison:** Random Forest excelled on the Math dataset, while both models achieved near parity on Portuguese.
-- **Socio-Behavioral Factors:** Variables like alcohol use, family relations, and parental education added little predictive value.
-- **Intervention Insights:** Schools could use these models to identify at-risk students early (low G1/G2 scores or extreme absenteeism) and intervene with tutoring or support services.
-
----
-
-## ✅ Conclusion
-
-- **Random Forest > Linear Regression** for Math.
-- **Linear Regression ≈ Random Forest** for Portuguese.
-- Both models predict final grades within 1–2 points of accuracy.
-- Practical application: supports **early academic intervention** and **data-driven decision-making** in education.
-
----
-
 [⬅️ Back: Usage](usage.md) | [➡️ Next: Figures](figures.md)

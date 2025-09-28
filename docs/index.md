@@ -14,6 +14,7 @@ Use the navigation below to explore:
 - [Results](results.md)
 - [Figures](figures.md)
 - [Discussion](discussion.md)
+- [Conclusion](conclusion.md)
 
 ---
 
