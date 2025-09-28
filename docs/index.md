@@ -6,7 +6,7 @@ title: Home
 
 Welcome to the **Student Grade Prediction** project documentation.
 
-📖 For a complete project overview, see the [README.md](../README.md).
+📖 For a complete project overview, see the [README.md](https://github.com/BenjaminBatte/student-grade-prediction/blob/main/README.md).
 
 ---
 
