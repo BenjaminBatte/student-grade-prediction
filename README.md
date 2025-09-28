@@ -70,7 +70,7 @@ pip install -r requirements.txt
 ### Run Full Pipeline (EDA + Train + Evaluate + Save Models)
 
 ```bash
-python -m src.main
+python src/run.py
 ```
 
 - Generates EDA plots → `results/figures/`
@@ -113,8 +113,9 @@ Metrics saved include:
 - **01_data_exploration.ipynb** → Initial EDA, distributions, correlations
 - **02_feature_engineering.ipynb** → Feature preprocessing, encoding, scaling
 - **03_modeling.ipynb** → Model training, evaluation, hyperparameter tuning
+- **04_predictions.ipynb** → Running trained models on test or new datasets, analyzing outputs
 
-These notebooks complement the `src/` pipeline and allow for interactive experimentation.
+These notebooks complement the `src/` pipeline and allow for interactive experimentation and validation.
 
 ---
 
