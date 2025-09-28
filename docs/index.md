@@ -8,13 +8,13 @@ Welcome to the **Student Grade Prediction** project documentation. This site pro
 
 Use the navigation below to explore:
 
+- [About](about.md)
 - [Architecture](architecture.md)
 - [Usage](usage.md)
 - [Results](results.md)
-- [About](about.md)
+- [Figures](figures.md)
+- [Discussion](discussion.md)
 
 ---
 
-[➡️ Next: Architecture](architecture.md)
-
----
+[➡️ Next: About](about.md)

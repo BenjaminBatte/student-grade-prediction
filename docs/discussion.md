@@ -1,10 +1,10 @@
 ---
-## title: Discussion
+title: Discussion
+---
 
 # 💬 Discussion
 
-This section interprets the results of the **Student Grade Prediction** project, connecting findings back to the research questions and existing literature.
----
+## This section interprets the results of the **Student Grade Prediction** project, connecting findings back to the research questions and existing literature.
 
 ## 🎯 Hypothesis Confirmation
 

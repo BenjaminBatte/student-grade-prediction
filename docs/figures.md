@@ -1,10 +1,10 @@
 ---
-## title: Figures
+title: Figures
+---
 
 # 📊 Results Figures
 
-This page shows exploratory data analysis (EDA) figures for both the **Mathematics** and **Portuguese** datasets.
----
+## This page shows exploratory data analysis (EDA) figures for both the **Mathematics** and **Portuguese** datasets.
 
 ## 📘 Mathematics Dataset
 

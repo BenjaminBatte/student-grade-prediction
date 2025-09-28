@@ -1,10 +1,10 @@
 ---
-## title: Usage
+title: Usage
+---
 
 # 🚀 Usage Guide
 
-This section explains how to run the **Student Grade Prediction** pipeline, generate sample input data, and make predictions.
----
+## This section explains how to run the **Student Grade Prediction** pipeline, generate sample input data, and make predictions.
 
 ## 📦 Installation
 

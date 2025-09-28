@@ -1,10 +1,10 @@
 ---
-## title: Results
+title: Results
+---
 
 # 📊 Results
 
-This section summarizes the outcomes of the **Student Grade Prediction** models, including evaluation metrics and interpretation of findings.
----
+## This section summarizes the outcomes of the **Student Grade Prediction** models, including evaluation metrics and interpretation of findings.
 
 ## 📈 Evaluation Metrics
 
@@ -58,4 +58,4 @@ Two models were applied to both datasets: **Linear Regression (LR)** and **Rando
 
 ---
 
-[⬅️ Back: Usage](usage.md) | [➡️ Next: Discussion](discussion.md)
+[⬅️ Back: Usage](usage.md) | [➡️ Next: Figures](figures.md)

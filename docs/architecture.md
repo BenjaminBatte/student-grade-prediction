@@ -1,44 +1,44 @@
 ---
+title: Architecture
+---
 
-## title: Architecture
-
-## 📐 Project Architecture
+# 📐 Project Architecture
 
 This section explains the folder structure and pipeline flow.
 
-### 🗂 Project Structure
+## 🗂 Project Structure
 
-```
 student-grade-prediction/
-│── data/                     # Raw datasets
-│   ├── student-mat.csv
-│   ├── student-por.csv
-│   └── ...
+│── data/ # Raw datasets
+│ ├── student-mat.csv
+│ ├── student-por.csv
+│ └── ...
 │
-│── notebooks/                # Experiments/EDA
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_modeling.ipynb
+│── notebooks/ # Experiments/EDA
+│ ├── 01_data_exploration.ipynb
+│ ├── 02_feature_engineering.ipynb
+│ └── 03_modeling.ipynb
 │
-│── results/                  # Outputs: logs, metrics, models, figures
-│   ├── figures/              # EDA plots
-│   ├── logs/                 # Logs from runs
-│   ├── metrics/              # Evaluation reports (.csv)
-│   └── models/               # Saved pipelines (.pkl)
+│── results/ # Outputs: logs, metrics, models, figures
+│ ├── figures/ # EDA plots
+│ ├── logs/ # Logs from runs
+│ ├── metrics/ # Evaluation reports (.csv)
+│ └── models/ # Saved pipelines (.pkl)
 │
-│── src/                      # Source code (modular + reusable)
-│   │── __init__.py
-│   │
-│   ├── data_loader.py        # Load raw datasets
-│   ├── preprocessing.py      # Build preprocessing transformers
-│   ├── eda.py                # EDA utilities
-│   ├── model.py              # Train, evaluate, save pipeline
-│   ├── utils.py              # Logging, helpers
-│   ├── main.py               # CLI: train + evaluate + save
-│   └── predict.py            # CLI: load model + predict on new data
+│── src/ # Source code (modular + reusable)
+│ │── **init**.py
+│ │
+│ ├── data_loader.py # Load raw datasets
+│ ├── preprocessing.py # Build preprocessing transformers
+│ ├── eda.py # EDA utilities
+│ ├── model.py # Train, evaluate, save pipeline
+│ ├── utils.py # Logging, helpers
+│ ├── main.py # CLI: train + evaluate + save
+│ └── predict.py # CLI: load model + predict on new data
 │
-│── requirements.txt          # Dependencies
-│── README.md                 # Documentation
+│── requirements.txt # Dependencies
+│── README.md # Documentation
+
 ```
 
 ## 🔄 Workflow
@@ -53,8 +53,18 @@ student-grade-prediction/
 
 ![Architecture Diagram](diagrams/flow_diagram.png)
 
-*(Diagram will be added to illustrate pipeline flow)*
+---
+
+## 🔗 Navigation
+
+* [Home](index.md)
+* [About](about.md)
+* [Usage](usage.md)
+* [Results](results.md)
+* [Figures](figures.md)
+* [Discussion](discussion.md)
 
 ---
 
-[⬅️ Home](index.md) | [➡️ Next: Usage](usage.md)
+[⬅️ Back: Home](index.md) | [➡️ Next: Usage](usage.md)
+```

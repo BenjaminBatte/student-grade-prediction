@@ -1,9 +1,11 @@
 ---
-## title: About
+title: About
+---
 
 # ℹ️ About This Project
 
-The **Student Grade Prediction** project was developed as part of the *ITS‑836: Data Science & Big Data Analytics* course at the University of the Cumberlands.
+The **Student Grade Prediction** project was developed as part of the _ITS-836: Data Science & Big Data Analytics_ course at the University of the Cumberlands.
+
 ---
 
 ## 🎯 Purpose
@@ -32,11 +34,22 @@ The **Student Grade Prediction** project was developed as part of the *ITS‑836
 
 ## 👤 Author
 
-**Benjamin Batte**
-PhD Student, Information Technology
-University of the Cumberlands
+**Benjamin Batte**  
+PhD Student, Information Technology  
+University of the Cumberlands  
 GitHub: [BenjaminBatte](https://github.com/BenjaminBatte)
 
 ---
 
-[⬅️ Home](index.md) | [➡️ Next: Architecture](architecture.md)
+## 🔗 Navigation
+
+- [Home](index.md)
+- [Architecture](architecture.md)
+- [Usage](usage.md)
+- [Results](results.md)
+- [Figures](figures.md)
+- [Discussion](discussion.md)
+
+---
+
+[⬅️ Back: Home](index.md) | [➡️ Next: Architecture](architecture.md)
