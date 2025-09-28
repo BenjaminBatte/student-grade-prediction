@@ -1,6 +1,6 @@
 ---
-title: Architecture
----
+
+## title: Architecture
 
 ## 📐 Project Architecture
 
@@ -23,7 +23,7 @@ student-grade-prediction/
 │── results/                  # Outputs: logs, metrics, models, figures
 │   ├── figures/              # EDA plots
 │   ├── logs/                 # Logs from runs
-│   ├── metrics/              # Evaluation reports (.json)
+│   ├── metrics/              # Evaluation reports (.csv)
 │   └── models/               # Saved pipelines (.pkl)
 │
 │── src/                      # Source code (modular + reusable)
@@ -31,7 +31,7 @@ student-grade-prediction/
 │   │
 │   ├── data_loader.py        # Load raw datasets
 │   ├── preprocessing.py      # Build preprocessing transformers
-│   ├── eda.py                # EDA utilities (optional)
+│   ├── eda.py                # EDA utilities
 │   ├── model.py              # Train, evaluate, save pipeline
 │   ├── utils.py              # Logging, helpers
 │   ├── main.py               # CLI: train + evaluate + save
@@ -47,14 +47,14 @@ student-grade-prediction/
 2. **Preprocess** → Missing values, encoding, scaling
 3. **EDA** → Distributions, correlations
 4. **Model Training** → Train & evaluate models
-5. **Save** → Metrics (.json) and models (.pkl)
+5. **Save** → Metrics (.csv) and models (.pkl)
 
 ## 🖼 Visual Diagram
 
 ![Architecture Diagram](diagrams/flow_diagram.png)
 
+*(Diagram will be added to illustrate pipeline flow)*
+
 ---
 
 [⬅️ Home](index.md) | [➡️ Next: Usage](usage.md)
-
----

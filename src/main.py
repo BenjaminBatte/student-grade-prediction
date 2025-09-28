@@ -29,11 +29,11 @@ def run_pipeline(dataset: str, model_name: str):
 
         if df is None or df.empty:
             logger.error(f"Failed to load {dataset} dataset")
-            return
+            return None
         
         if "G3" not in df.columns:
             logger.error("Target column 'G3' missing from dataset")
-            return
+            return None
 
         y = df["G3"]
         X = df.drop("G3", axis=1)
@@ -47,12 +47,16 @@ def run_pipeline(dataset: str, model_name: str):
 
         # Choose model
         if model_name == "random_forest":
-            regressor = RandomForestRegressor(n_estimators=100, random_state=42)
+            regressor = RandomForestRegressor(
+                n_estimators=100, 
+                random_state=42, 
+                n_jobs=1
+            )
         elif model_name == "linear_regression":
             regressor = LinearRegression()
         else:
             logger.error(f"Unsupported model: {model_name}")
-            return
+            return None
 
         # Build full pipeline
         pipeline = Pipeline(steps=[
@@ -80,38 +84,13 @@ def run_pipeline(dataset: str, model_name: str):
         )
 
         elapsed = round(time.time() - start_time, 2)
-        logger.info(f"✅ Pipeline completed in {elapsed}s. MAE: {metrics['mae']}, R²: {metrics['r2']}")
+        logger.info(
+            f"✅ Pipeline completed in {elapsed}s. "
+            f"MAE: {metrics['mae']}, R²: {metrics['r2']}"
+        )
+
+        return metrics   # ✅ return metrics for printing later
 
     except Exception as e:
         logger.error(f"❌ Pipeline failed: {e}")
         raise
-
-if __name__ == "__main__":
-    logger.info("🚀 Starting automated ML pipeline...")
-    
-    # Run EDA
-    mat, por = load_data()
-    for name, data in [("math", mat), ("portuguese", por)]:
-        if data is not None:
-            try:
-                logger.info(f"📊 Generating EDA plots for {name} dataset...")
-                plot_distributions(data, dataset_name=name)
-                plot_correlation_heatmap(data, dataset_name=name)
-                logger.info(f"✅ {name} EDA completed")
-            except Exception as e:
-                logger.error(f"❌ {name} EDA failed: {e}")
-    
-    # Train all combinations
-    configurations = [
-        ("math", "random_forest"),
-        ("math", "linear_regression"), 
-        ("portuguese", "random_forest"),
-        ("portuguese", "linear_regression")
-    ]
-    
-    logger.info("🤖 Training all model-dataset combinations...")
-    for i, (dataset, model) in enumerate(configurations, 1):
-        logger.info(f"🔧 Training {i}/{len(configurations)}: {model} on {dataset}")
-        run_pipeline(dataset, model)
-    
-    logger.info("🎉 All done! Check results/ folder for outputs.")

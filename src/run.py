@@ -14,9 +14,28 @@ def main():
     print("🎓 Student Performance Prediction Pipeline")
     print("=" * 50)
     
-    # You can add interactive options here
-    run_pipeline("math", "random_forest")
-    run_pipeline("portuguese", "random_forest")
+    # Run all dataset-model combinations
+    datasets = ["math", "portuguese"]
+    models = ["random_forest", "linear_regression"]
+
+    results = {}
+    for dataset in datasets:
+        for model in models:
+            key = f"{dataset}_{model}"
+            results[key] = run_pipeline(dataset, model)
+
+    # Print summary of results
+    print("\n=== Model Results ===")
+    for key, metrics in results.items():
+        print(f"\n{key}:")
+        for metric, value in metrics.items():
+            if isinstance(value, (int, float)):
+                print(f"  {metric}: {value:.4f}")
+            else:
+                print(f"  {metric}: {value}")
+
+    logger.info("🎉 All done! Check results/ folder for outputs.")  
+
 
 if __name__ == "__main__":
     main()

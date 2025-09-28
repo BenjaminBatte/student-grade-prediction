@@ -1,11 +1,9 @@
 ---
-title: Usage
----
+## title: Usage
 
 # 🚀 Usage Guide
 
 This section explains how to run the **Student Grade Prediction** pipeline, generate sample input data, and make predictions.
-
 ---
 
 ## 📦 Installation
@@ -18,6 +16,7 @@ This section explains how to run the **Student Grade Prediction** pipeline, gene
    ```
 
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -29,16 +28,22 @@ This section explains how to run the **Student Grade Prediction** pipeline, gene
 Train and evaluate a model using the CLI:
 
 ```bash
-# Train on math dataset
+# Train on math dataset with Random Forest
 python src/main.py --dataset math --model random_forest
 
-# Train on portuguese dataset
-python src/main.py --dataset portuguese --model random_forest
+# Train on Portuguese dataset with Linear Regression
+python src/main.py --dataset portuguese --model linear_regression
 ```
 
-- Metrics are saved to: `results/metrics/*.json`
+- Metrics are saved to: `results/metrics/*.csv`
 - Trained models are saved to: `results/models/*.pkl`
 - Logs are written to: `results/logs/project.log`
+
+Or run **all dataset/model combinations** at once:
+
+```bash
+python src/run.py
+```
 
 ---
 
@@ -66,20 +71,34 @@ Run predictions on new data with a trained model:
 python src/predict.py --model results/models/random_forest_math.pkl --data data/new_data_math.csv --out results/predictions
 
 # Predict with the Portuguese model
-python src/predict.py --model results/models/random_forest_portuguese.pkl --data data/new_data.csv --out results/predictions
+python src/predict.py --model results/models/linear_regression_portuguese.pkl --data data/new_data.csv --out results/predictions
 ```
 
 - The first 10 predictions are printed to the console.
-- All predictions are saved to: `results/predictions/predictions.csv`
+- All predictions are saved to: `results/predictions/predictions_*.csv`
 
 Example output:
 
 ```
-First 10 predictions: [10.82 11.06 13.07 14.54 13.02]
+==================================================
+PREDICTION SUMMARY
+==================================================
+Model: random_forest_math.pkl
+Input data: new_data_math.csv
+Number of predictions: 5
+Prediction range: 10.8 - 14.5
+Average prediction: 12.7
+
+First 10 predictions:
+  Student 1: 10.82 (rounded: 11)
+  Student 2: 11.06 (rounded: 11)
+  Student 3: 13.07 (rounded: 13)
+  Student 4: 14.54 (rounded: 15)
+  Student 5: 13.02 (rounded: 13)
+
+✅ Predictions saved to: results/predictions/predictions_20250927_124706.csv
 ```
 
 ---
 
 [⬅️ Back: Architecture](architecture.md) | [➡️ Next: Results](results.md)
-
----
