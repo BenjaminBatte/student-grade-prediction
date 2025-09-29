@@ -226,3 +226,60 @@ NEW RUN STARTED: 2025-09-29 09:43:17.073643 | Run ID: 20250929_094317
 2025-09-29 09:43:27,963 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
 2025-09-29 09:43:27,963 [INFO] ✅ Pipeline completed in 0.07s. MAE: 0.765, R²: 0.849
 2025-09-29 09:43:27,976 [INFO] 🎉 All done! Check results/ folder for outputs.
+
+================================================================================
+NEW RUN STARTED: 2025-09-29 09:57:12.285137 | Run ID: 20250929_095712
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-29 09:57:15.166389 | Run ID: 20250929_095715
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-29 09:57:15.569555 | Run ID: 20250929_095715
+================================================================================
+
+================================================================================
+NEW RUN STARTED: 2025-09-29 09:57:15.570554 | Run ID: 20250929_095715
+================================================================================
+2025-09-29 09:57:15,603 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:15,604 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:22,413 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:22,413 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:22,429 [INFO] Training random_forest on math dataset...
+2025-09-29 09:57:22,939 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-29 09:57:22,997 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_math_random_forest.csv
+2025-09-29 09:57:22,998 [INFO]    MAE: 1.179, RMSE: 1.958, R²: 0.813
+2025-09-29 09:57:23,070 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_math.pkl
+2025-09-29 09:57:23,150 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-29 09:57:23,150 [INFO] ✅ Pipeline completed in 0.75s. MAE: 1.179, R²: 0.813
+2025-09-29 09:57:23,165 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:23,165 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:23,172 [INFO] Training linear_regression on math dataset...
+2025-09-29 09:57:23,254 [INFO] ✅ Model training completed. Train size: 316, Test size: 79
+2025-09-29 09:57:23,279 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_math_linear_regression.csv
+2025-09-29 09:57:23,289 [INFO]    MAE: 1.647, RMSE: 2.378, R²: 0.724
+2025-09-29 09:57:23,296 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\linear_regression_math.pkl
+2025-09-29 09:57:23,309 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-29 09:57:23,310 [INFO] ✅ Pipeline completed in 0.16s. MAE: 1.647, R²: 0.724
+2025-09-29 09:57:23,331 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:23,333 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:29,549 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:29,551 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:29,553 [INFO] Training random_forest on portuguese dataset...
+2025-09-29 09:57:30,086 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-29 09:57:30,148 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_random_forest.csv
+2025-09-29 09:57:30,148 [INFO]    MAE: 0.747, RMSE: 1.243, R²: 0.842
+2025-09-29 09:57:30,253 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\random_forest_portuguese.pkl
+2025-09-29 09:57:30,361 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-29 09:57:30,363 [INFO] ✅ Pipeline completed in 0.83s. MAE: 0.747, R²: 0.842
+2025-09-29 09:57:30,393 [INFO] Math dataset loaded successfully with shape (395, 33)
+2025-09-29 09:57:30,397 [INFO] Portuguese dataset loaded successfully with shape (649, 33)
+2025-09-29 09:57:30,400 [INFO] Training linear_regression on portuguese dataset...
+2025-09-29 09:57:30,473 [INFO] ✅ Model training completed. Train size: 519, Test size: 130
+2025-09-29 09:57:30,499 [INFO] 📊 Model evaluation completed. Metrics saved to: C:\Users\16412\Documents\Projects\student-grade-prediction\results\metrics\metrics_portuguese_linear_regression.csv
+2025-09-29 09:57:30,500 [INFO]    MAE: 0.765, RMSE: 1.215, R²: 0.849
+2025-09-29 09:57:30,516 [INFO] [SAVE] Versioned model saved at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\linear_regression_portuguese.pkl
+2025-09-29 09:57:30,531 [INFO] [SAVE] Latest model updated at: C:\Users\16412\Documents\Projects\student-grade-prediction\results\models\latest_model.pkl
+2025-09-29 09:57:30,531 [INFO] ✅ Pipeline completed in 0.17s. MAE: 0.765, R²: 0.849
+2025-09-29 09:57:30,546 [INFO] 🎉 All done! Check results/ folder for outputs.
