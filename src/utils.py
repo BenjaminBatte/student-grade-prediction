@@ -6,17 +6,19 @@ from datetime import datetime
 
 def get_logger(name: str = __name__, level: int = logging.INFO):
     """
-    Configure and return a logger instance.
+    Configure and return a logger instance for consistent logging
+    across the project.
 
-    Logs are written both to the console and to a file:
-    - Console: Real-time output of logs
-    - File: Stored at results/logs/project.log (UTF-8 encoding)
-
-    Each new run is marked with a timestamped header in the log file.
+    Features:
+        - Writes logs to both console (stdout) and a file.
+        - Creates results/logs/project.log if it does not exist.
+        - Each new run writes a clear header separator with timestamp + run ID.
 
     Args:
-        name (str, optional): Logger name (default: __name__).
-        level (int, optional): Logging level (default: logging.INFO).
+        name (str, optional): Name of the logger (default: __name__).
+            → Helps distinguish logs from different modules.
+        level (int, optional): Logging level (default: INFO).
+            → Can be set to DEBUG, WARNING, ERROR, etc.
 
     Returns:
         logging.Logger: Configured logger object.
@@ -26,19 +28,29 @@ def get_logger(name: str = __name__, level: int = logging.INFO):
         >>> logger = get_logger(__name__)
         >>> logger.info("Logger initialized")
     """
+    # Create or retrieve a logger with the specified name
     logger = logging.getLogger(name)
     logger.setLevel(level)
-    logger.propagate = False  # Avoid duplicate logs from the root logger
+    logger.propagate = False  # Prevent duplicate logs from root logger
 
-    if not logger.handlers:  # Prevent adding multiple handlers on repeated calls
+    # -----------------------------------------------------------------
+    # Add handlers only once (avoid duplication if function called again)
+    # -----------------------------------------------------------------
+    if not logger.handlers:
+        # Format: 2025-09-29 12:30:15 [INFO] Message text
         formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")
 
-        # Console handler → outputs logs to stdout
+        # -----------------------------
+        # Console handler (real-time logs)
+        # -----------------------------
         console_handler = logging.StreamHandler(sys.stdout)
         console_handler.setFormatter(formatter)
         logger.addHandler(console_handler)
 
-        # File handler → logs saved to results/logs/project.log
+        # -----------------------------
+        # File handler (persistent logs)
+        # Saves logs to results/logs/project.log
+        # -----------------------------
         project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
         log_dir = os.path.join(project_root, "results", "logs")
         os.makedirs(log_dir, exist_ok=True)
@@ -48,7 +60,10 @@ def get_logger(name: str = __name__, level: int = logging.INFO):
         file_handler.setFormatter(formatter)
         logger.addHandler(file_handler)
 
-        # Write a visual separator in the log file for each new run
+        # -----------------------------
+        # Add a visual separator for each new run
+        # This makes the log file easier to navigate
+        # -----------------------------
         run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
         separator = (
             "\n" + "=" * 80 +
