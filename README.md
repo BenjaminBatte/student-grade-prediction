@@ -65,6 +65,14 @@ pip install -r requirements.txt
 
 ---
 
+## ⚡ Quickstart
+
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run pipeline: `python src/run.py`
+3. Check outputs in `results/` (plots, metrics, models).
+4. (Optional) Run predictions:  
+   `python -m src.predict --model results/models/random_forest_math.pkl --data data/new_data_math.csv`
+
 ## 🚀 Usage
 
 ### Run Full Pipeline (EDA + Train + Evaluate + Save Models)
