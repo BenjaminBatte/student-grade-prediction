@@ -1,5 +1,5 @@
 ---
-title: Figures
+##title: Figures
 ---
 
 # 📊 Results Figures
